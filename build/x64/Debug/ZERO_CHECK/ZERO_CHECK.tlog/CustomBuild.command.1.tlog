@@ -1,0 +1,10 @@
+^C:\VALERA_PROJECT\BUILD\CMAKEFILES\6E9BA36E3E8654C6A2BB4D5EAB09C91A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Valera_project/dev -BC:/Valera_project/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Valera_project/build/main.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
